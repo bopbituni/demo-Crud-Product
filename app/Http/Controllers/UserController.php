@@ -32,11 +32,7 @@ class UserController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
 
-=======
-        return view('user.index');
->>>>>>> aa9f2a0dfc2f39dfa98651c64ba398b3999c6229
     }
 
     /**
