@@ -22,3 +22,4 @@ Route::prefix('user')->group(function() {
     Route::post('{id}/update', 'UserController@update')->name('user.update');
     Route::get('{id}/delete', 'UserController@destroy')->name('user.destroy');
 });
+
