@@ -1,8 +1,7 @@
-
 @extends('layouts.master')
 @section('content')
-    <form>
-        Name: <input name="name"  type="text" placeholder="input your name">
+    <form >
+        Name: <input name="name" type="text" placeholder="input your name">
         <br>
         Email <input type="text" placeholder="input your email" name="email">
         <br>
@@ -11,4 +10,3 @@
         <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
     </form>
 @stop
-
