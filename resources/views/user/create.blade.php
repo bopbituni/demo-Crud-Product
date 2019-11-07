@@ -9,5 +9,4 @@
         <button type="submit" class="btn btn-primary">Update</button>
         <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
     </form>
-
 @stop
