@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <button></button>
+        <a class="btn btn-success" href="{{route('user.create')}}">Add</a>
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-hover">
