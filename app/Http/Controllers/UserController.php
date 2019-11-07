@@ -24,33 +24,16 @@ class UserController extends Controller
         return redirect()->route('user.index');
     }
 
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-
+        return view('user.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('user.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $user = new User();
@@ -59,12 +42,6 @@ class UserController extends Controller
         $user->password = $request->input('password');
         $user->save();
         return redirect()->route('user.index');
-    }
-
-
-    public function show($id)
-    {
-        //
     }
 
     public function destroy($id)
