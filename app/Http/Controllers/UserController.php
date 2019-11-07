@@ -44,6 +44,14 @@ class UserController extends Controller
         return redirect()->route('user.index');
     }
 
+
+
+    public function show($id)
+    {
+ 
+    }
+
+
     public function destroy($id)
     {
 
