@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -40,7 +41,7 @@ class UserController extends Controller
         $user->email = $request->input('email');
         $user->password =$request->input('password');
         $user->save();
-        return redirect()->route();
+        return redirect()->route('user.index');
     }
 
     /**
@@ -83,8 +84,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+
+    public function destroy($id) {
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->route('user.index');
+
     }
 }
